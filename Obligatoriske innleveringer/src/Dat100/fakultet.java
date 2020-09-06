@@ -12,19 +12,23 @@ public class fakultet {
 				
 		// angir variabler
 				int n = parseInt (nTekst);
-				int i = 1;
-				int resultat;
+				int resultat = 1; 	
 		
-		// While-løkke
-				while (n>i) {
-					i *= n;
-					n--;
+		// utregning
+		if (n>0) {
+		for (int i = 1; i<=n; i++) {
+		resultat = resultat * i;
+								
 				}
+			showMessageDialog (null, "Fakultetet til tallet du tastet inn blir: " + resultat); }
+		else {
 			
-				showMessageDialog ("Fakultetet til tallet du tastet inn blir: " + i);
+			showMessageDialog (null, resultat);
 	}
 	
 }
+}
+
 
 				
 			
